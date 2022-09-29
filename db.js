@@ -6,3 +6,5 @@ const supabase = createClient('db.jsqcjolulesciklixsfz.supabase.co', 'public-sbp
 const { data, error } = await supabase
 .from('test')
 .select()
+
+console.log(data)
