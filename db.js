@@ -1,10 +1,11 @@
 import { createClient } from '/node_modules/@supabase/supabase-js/'
 
 // Create a single supabase client for interacting with your database
-const supabase = createClient('https://db.jsqcjolulesciklixsfz.supabase.co', "public-sbp_677283778dff4427b82450b999b07274269bf70c-key")
+const supabase = createClient('https://jsqcjolulesciklixsfz.supabase.co', "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpzcWNqb2x1bGVzY2lrbGl4c2Z6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQzMTI5MjksImV4cCI6MTk3OTg4ODkyOX0.EFcB75c7Wv1ykOs0K6VQZmDdR334dkVCVPXkenHZeII")
 
 // Make a request
-const { data: test, error } = await supabase.from('test').select('*')
-
+let { data: test, error } = await supabase
+  .from('test')
+  .select('*')
 
 console.log(data)
