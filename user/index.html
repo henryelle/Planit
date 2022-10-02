@@ -9,17 +9,34 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
     <!--<script type="module" src="db.js"></script>-->
     <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    <h1>Profile page.</h1>
-    <button class="btn" onclick="test()">Button</button>
-    <div class="dropdown">
-        <label tabindex="0" class="btn m-1">Click Me</label>
-        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-          <li><a>Test</a></li>
-        </ul>
-      </div>
+  <div class="navbar bg-base-100">
+    <div class="flex-1">
+      <a class="btn m-4">Astronaut</a>
+      <a class="btn m-4">Planner</a>
+      <a class="btn m-4">Tracker</a>
+    </div>
+    
+    <div class="flex-none">
+      <ul class="menu menu-horizontal p-0">
+        <a class="btn m-4">Sign Out</a>
+        <li tabindex="0">
+      </ul>
+    </div>
+  </div>
+
+  <div class="text p-10 title-div">
+    <h3 class="welcome">WELCOME [USER] TO...</h3>
+    <h1 class="name">PLANIT YOU!</h1>
+    <h3 class="small">STATUS: online</h3>
+    <h3 class="small">CURRENT DATE: 10/02/2022, 1:29pm</h3>
+    <h3 class="small">TIME ELAPSED: 42 minutes</h3>
+
+  </div>
 </body>
 </html>
