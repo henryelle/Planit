@@ -1,0 +1,39 @@
+body:before {
+    content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	display:block;
+    background-color:#050113;
+}
+
+.text {
+    color:#a7cbe8;
+}
+
+.navbar {
+    background-color:#050113;
+}
+
+.welcome, .name, .small {
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.welcome {
+    font-size: 2em;
+}
+
+.name {
+    font-size: 4em;
+}
+
+.small {
+    font-size: 1em;
+}
+
+.title-div {
+    margin-top: 5em;
+}
