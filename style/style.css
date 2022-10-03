@@ -38,6 +38,30 @@ body:before {
     margin-top: 5em;
 }
 
+.flex-1 > .btn {
+    color: #81F57C;
+    background-color: #050113;
+    border-width: 1px;
+    border-color: #81F57C;
+}
+
+.flex-1 > .btn:hover {
+    border-color: #a7cbe8;
+    color: #a7cbe8
+}
+
+.menu > .btn {
+    color: #81F57C;
+    background-color: #050113;
+    border-width: 1px;
+    border-color: #81F57C;
+}
+
+.menu > .btn:hover {
+    border-color: #db342e;
+    color: #db342e
+}
+
 .container {
     display: flex;
     align-items: center;
