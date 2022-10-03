@@ -37,3 +37,22 @@ body:before {
 .title-div {
     margin-top: 5em;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+  
+.planet {
+    width: 400px;
+    height: 300px;
+}
+
+.image {
+    flex-basis: 40%;
+}
+  
+.text {
+    font-size: 16px;
+}
