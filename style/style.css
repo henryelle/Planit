@@ -41,9 +41,18 @@ body:before {
 }
   
 .planet {
-    width: 900px;
-    height: 300px;
+    padding: 30px;
+    margin: 15px;
+    width: 250%;
+    max-width: 250%;
 }
+
+.planet:hover{
+    -webkit-transform: rotate(360deg);
+    -webkit-transition-duration: 3s;
+    -webkit-transition-delay: now;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;}
   
 .text {
     font-size: 16px;
