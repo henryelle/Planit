@@ -15,7 +15,7 @@
     <script type="text/javascript" src="../scripts/script.js"></script>
     <!-- <script type="module" src="../scripts/db.mjs"></script> -->
     <script type="module">
-      import { createClient } from '/../node_modules/@supabase/supabase-js'
+      import { createClient } from '/node_modules/@supabase/supabase-js'
       const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
       let { data: test, error } = await supabase
         .from('test')
