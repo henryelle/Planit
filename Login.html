@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="../style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../scripts/script.js"></script>
-
+    <script type="module">
+        import { createClient } from '/../@supabase/supabase-js'
+        const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+        let { data: test, error } = await supabase
+          .from('test')
+          .select('id')
+        console.log(data)
+      </script>
   </head>
   <body>
 	  <h1>Login</h1>
