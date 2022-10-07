@@ -8,4 +8,14 @@ let { data: test, error } = await supabase
   .from('test')
   .select('*')
 
-console.log(supabase.data)
+export const data = supabase.data;
+/*
+export const name = 'square';
+
+export function draw(ctx, length, x, y, color) {
+  ctx.fillStyle = color;
+  ctx.fillRect(x, y, length, length);
+
+  return { length, x, y, color };
+}
+*/
