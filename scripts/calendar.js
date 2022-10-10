@@ -1,3 +1,5 @@
+// https://w3schoolweb.com/how-to-create-a-calendar-in-html-and-css/
+// base code ^
 var curDate = new Date().getDate();
 var curMonth = new Date().getMonth();
 var curYear = new Date().getFullYear();
@@ -18,7 +20,7 @@ var months = [
 ];
 var noofdays = [
   "31",
-  "29",
+  "28",
   "31",
   "30",
   "31",
