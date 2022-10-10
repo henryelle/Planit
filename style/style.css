@@ -63,26 +63,35 @@ body:before {
     margin-top: 5em;
 }
 
-.flex-1 > .btn {
-    color: #81F57C;
-    background-color: #050113;
-    border-width: 1px;
-    border-color: #81F57C;
+.btn {
+    border: none;
 }
 
-.flex-1 > .btn:hover {
-    border-color: #a7cbe8;
-    color: #a7cbe8
+.flex-1 {
+    height: 100px;
 }
 
-.menu > .btn {
-    color: #81F57C;
-    background-color: #050113;
-    border-width: 1px;
-    border-color: #81F57C;
+.logo {
+    height: 10em;
 }
 
-.menu > .btn:hover {
-    border-color: #db342e;
-    color: #db342e
+.m-4 {
+    background: url("../images/buttonWhite.svg") no-repeat;
+}
+
+.m-4:hover {
+    background: url("../images/buttonRed.svg") no-repeat;
+}
+
+.label-text {
+    color:#a7cbe8;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.container-1 {
+    margin: 0 auto;
+}
+
+.form-control {
+    padding-bottom: 10px;
 }

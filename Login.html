@@ -9,21 +9,29 @@
     <link rel="stylesheet" href="../style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../scripts/script.js"></script>
-    <script type="module">
-        import { createClient } from '/../@supabase/supabase-js'
-        const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
-        let { data: test, error } = await supabase
-          .from('test')
-          .select('id')
-        console.log(data)
-      </script>
   </head>
   <body>
-	  <h1>Login</h1>
-    <div id="main-div">
-      <h2>Welcome to YouPlanit!</h2>
-      <h3>An adventure-based habit tracker, mood journal, and planner.</h3>
-      <h3>Please enter your login information if you already have an account.</h3>
+    <div class="navbar bg-base-100">
+      <div class="flex-1">
+        <img class="logo" src="/../images/logo.svg" alt="Logo"/>
+      </div>
     </div>
+
+    <div class="container-1">
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">Username:</span>
+        </label> 
+        <input type="text" placeholder="username" class="input input-accent input-bordered">
+      </div>
+
+      <div class="form-control 1">
+        <label class="label">
+          <span class="label-text">Password:</span>
+        </label> 
+        <input type="text" placeholder="password" class="input input-accent input-bordered">
+      </div>
+    </div>
+    
   </body>
 </html>
