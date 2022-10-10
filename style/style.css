@@ -85,20 +85,3 @@ body:before {
 .m-4:hover {
     background: url("../images/buttonGreen.svg") no-repeat;
 }
-
-#signout:hover {
-    background: url("../images/buttonRed.svg") no-repeat;
-}
-
-.label-text {
-    color:#a7cbe8;
-    font-family: 'Noto Sans Mono', monospace;
-}
-
-.container-1 {
-    margin: 0 auto;
-}
-
-.form-control {
-    padding-bottom: 10px;
-}
