@@ -1,4 +1,4 @@
-import mysql from './node_modules'
+import mysql from './node_modules/mysql'
 
 export var con = mysql.createConnection({
   host: "199.231.187.232",
