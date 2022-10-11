@@ -82,7 +82,7 @@ for (var i = 0; i < 42; i++) {
     jQuery(jQuery(".all-date ul li")[i]).css("opacity") == 1
   ) {
     jQuery(jQuery(".all-date ul li")[i]).css({
-      "background-color": "#02548b",
+      "background-color": "#998BFA",
       color: "#fff"
     });
   }
