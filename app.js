@@ -1,4 +1,4 @@
-export var mysql = require('mysql');
+import mysql from mysql
 
 export var con = mysql.createConnection({
   host: "199.231.187.232",
