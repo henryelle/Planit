@@ -93,6 +93,10 @@ body:before {
     background: url("../images/buttonGreen.svg") no-repeat;
 }
 
+#signout:hover {
+    background: url("../images/buttonRed.svg") no-repeat;
+}
+
 .ground-img{
     height: 50%;
 }
