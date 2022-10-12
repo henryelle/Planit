@@ -18,13 +18,13 @@
 function showCustomer(str) {
   var xhttp;
   if (str == "") {
-    document.getElementByTagName("h1").innerHTML = "";
+    document.getElementById("main-div").innerHTML = "";
     return;
   }
   xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-    document.getElementsByTagName("h1").innerHTML = this.responseText;
+    document.getElementsById("main-div").innerHTML = this.responseText;
     }
   };
   xhttp.open("GET", "connect.php?q="+str, true);
