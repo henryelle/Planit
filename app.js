@@ -23,6 +23,6 @@ function showCustomer() {
     document.getElementById("main-div").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "connect_test.php?q="+str, true);
+  xhttp.open("GET", "connect_test.php?", true);
   xhttp.send();
 }
