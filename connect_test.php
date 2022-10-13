@@ -1,7 +1,7 @@
 <?php
 $dbServerName = "199.231.187.232";
-$dbUsername = "hosanna";
-$dbPassword = "gillian";
+$dbUsername = "root";
+$dbPassword = "very_strong_password";
 $dbName = "Planit_You";
 
 // create connection
