@@ -7,9 +7,13 @@ $dbName = "Planit_You";
 // create connection
 $conn = new mysqli($dbServerName, $dbUsername, $dbPassword, $dbName);
 
+$sql = "SELECT *";
+$stmt = $conn->prepare($sql);
+$stmt->execute();
+
 // check connection
-if ($conn->connect_error) {
-    $echo "No.";
-}
-echo "Connected successfully";
+// if ($conn->connect_error) {
+//     $echo "No.";
+// }
+// echo "Connected successfully";
 ?>
