@@ -14,7 +14,7 @@
     <script type="text/javascript" src="../app.js"></script>
   </head>
 
-  <!-- TO DO: center everything on all screen sizes, add background art, launch submit button css not working gr -->
+  <!-- TO DO: center everything on all screen sizes, launch submit button css not working gr, REPONSIVE ): -->
   <body>
     <div class="navbar bg-base-100">
       <div class="flex-1">
@@ -33,7 +33,7 @@
       <div class="form-title">
         <h2>LOG IN</h2>
       </div>
-      <form class="login-form">
+      <form class="login-form" action=”info.php” method=”post”>
         <div class="form-control">
           <label class="label">
             <span class="label-text">Email:</span><br>
@@ -49,9 +49,10 @@
         <div class="form-submit">
           <input type="submit" value="Launch">
         </div>
-      <div class="form-info">
-        <p>Don't have an account? Sign up here.</p>
-      </div>
+        <div class="form-info">
+          <p>Don't have an account? Sign up here.</p>
+        </div>
+    </form>
     </div>
   </body>
 </html>
