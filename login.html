@@ -1,14 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../style/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../scripts/script.js"></script>
+    <script type="text/javascript" src="../app.js"></script>
   </head>
 
   <!-- TO DO: center everything on all screen sizes, fix nav bar, add background art -->
@@ -19,13 +22,16 @@
       </div>
       <div class="flex-none">
         <ul class="menu menu-horizontal p-0">
-          <a id="register" class="btn m-4">Register</a>
+          <a class="btn m-4" href="#./register.html">Register</a>
           <li tabindex="0">
         </ul>
       </div>
     </div>
-    <div class="container-1">
-      <div>
+
+    <img class="login-background" src = "/../images/loginBackground.svg" alt="Login Background"/>
+
+    <div class="container">
+      <div class="form-title">
         <h2>LOG IN</h2>
       </div>
       <div class="form-control">
@@ -40,7 +46,7 @@
         </label> 
         <input type="text" placeholder="password" class="input input-accent input-bordered">
       </div>
-      <div>
+      <div class="form-info">
         <p>Don't have an account? Sign up here.</p>
       </div>
     </div>
