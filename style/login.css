@@ -40,12 +40,11 @@ body:before {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr;
     position: relative;
     width: 55%;
     margin: 0 auto;
-    padding: 10px;
 }
 
 .login-background {
@@ -62,8 +61,7 @@ body:before {
     grid-row-start: 1;
     grid-row-end: 2;
     z-index: 1;
-    align-items: center;
-    justify-content: space-evenly;
+    margin: auto;
     font-size: 20px;
     font-family: 'Noto Sans Mono', monospace;
     font-weight: bold;
@@ -104,10 +102,10 @@ input[type=email], input[type=password] {
 }
 
 input[type=submit] {
-    border: 1px;
-    border-color: #A7CBE8;
     margin: 2px 0;
     padding: 10px 16px;
+    border: 1px;
+    border-color: #A7CBE8;
     font-family: 'Noto Sans Mono', monospace;
     color: #A7CBE8;
 }
