@@ -1,0 +1,30 @@
+body:before {
+    content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	display:block;
+    background-image: url("../images/backgroundV4.gif");
+    background-color:#050113;
+}
+
+.navbar {
+    background-color:#050113;
+}
+
+.flex-1 {
+    height: 100px;
+}
+
+.btn {
+    border: none;
+}
+
+.logo {
+    height: 5em;
+    margin-left: 13px;
+    padding-right: 18px;
+}
