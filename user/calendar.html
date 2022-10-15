@@ -27,7 +27,7 @@
 
   <div class="flex-child">  
     <div class="container">
-      <div class="curr-month"><b>november</b></div>
+      <div class="curr-month"><b id="month-box">november</b></div>
       <div class="all-days">
         <ul>
           <li>sun</li>
@@ -45,8 +45,8 @@
       </div>
     </div>
     <div class="btn-group">
-      <button class="btn btn-outline btn-wide">Previous Month</button> 
-      <button class="btn btn-outline btn-wide">Next Month</button>
+      <button class="btn btn-outline btn-wide" onclick="pageMonth('left')">Previous Month</button> 
+      <button class="btn btn-outline btn-wide" onclick="pageMonth('right')">Next Month</button>
     </div>
   </div>
 
