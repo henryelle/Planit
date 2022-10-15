@@ -17,5 +17,8 @@
       <h3>Hosanna x2</h3>
       <h3>Alivia x3</h3>
     </div>
+    <?php
+    echo "hi";
+    ?>
   </body>
 </html>
