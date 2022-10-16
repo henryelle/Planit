@@ -44,7 +44,6 @@ body:before {
 }
 
 .login-background {
-    border: none;
     grid-column: 1 / 4;
     grid-row: 1 / 4;
 }
@@ -52,7 +51,6 @@ body:before {
 .form-title {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    z-index: 1;
     margin: auto;
     font-size: 30px;
     font-family: 'Noto Sans Mono', monospace;
@@ -64,7 +62,6 @@ body:before {
 .login-form {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    z-index: 1;
 }
 
 .form-control {
