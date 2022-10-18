@@ -1,8 +1,14 @@
+-- ALL TABLES: can you make every table lowercase? it's good MySQL naming practice. if not it's okay
+
 DROP DATABASE IF EXISTS Planit_You;
 CREATE DATABASE Planit_You;
 USE Planit_You;
 
 DROP TABLE IF EXISTS Users;
+
+
+-- Let's drop the career field. Gillian gave us feedback on our audience, it should be people looking to organize their lives, not just students
+-- Or leave it and make it optional in case we have enough time at the end to make student functionality
 
 CREATE TABLE Users (
     UserID varchar(50) AUTO_INCREMENT PRIMARY KEY,
@@ -13,6 +19,9 @@ CREATE TABLE Users (
 );
 
 DROP TABLE IF EXISTS Contact;
+
+
+-- Let's remove this table altogether, I think. Email should suffice for now.
 
 CREATE TABLE Contact (
     UserID varchar(50) AUTO_INCREMENT PRIMARY KEY,
@@ -32,6 +41,12 @@ CREATE TABLE Assignments (
     AssignmentDescription varchar(50) NOT NULL,
     DueDate date NOT NULL,
 );
+
+
+-- Let's rename this to planits
+-- End time should be nullable
+-- make HabitType PlanitType (it will either be a goal or a habit)
+-- make an array called DaysLogged (we will input days they logged into this array as a string)
 
 DROP TABLE IF EXISTS Habits;
 
