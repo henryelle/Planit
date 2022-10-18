@@ -42,7 +42,7 @@ body:before {
     text-align: center;
 }
 
-h1, h3 {
+h1, h3, h4 {
     font-family: 'Noto Sans Mono', monospace;
 }
 
@@ -66,4 +66,10 @@ h1 {
 
 .ack > h3 {
     padding-bottom: 100px;
+}
+
+.info {
+    text-align: center;
+    max-width: 75%;
+    margin: 0 auto;
 }
