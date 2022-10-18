@@ -8,62 +8,50 @@ body:before {
 	z-index:-1;
 	display:block;
     background-image: url("../images/backgroundV4.gif");
-    background-color:#050113; 
+    background-color:#050113;
 }
 
 .navbar {
     background-color: rgba(0, 0, 0, 0);
 }
-
+  
 .flex-1 {
     height: 100px;
 }
-
+  
 .btn {
     border: none;
 }
-
+  
 .logo {
     height: 5em;
     margin-left: 13px;
     padding-right: 18px;
 }
-
+  
 .m-4 {
     padding-bottom: 10px;
     background: url("../images/buttonWhite.svg") no-repeat;
 }
-
+  
 .m-4:hover {
     background: url("../images/buttonGreen.svg") no-repeat;
 }
 
-.mainbody {
-    text-align: center;
+#lSide {
+    max-width: 25%;
+    width: 25%;
 }
 
-h1, h3 {
-    font-family: 'Noto Sans Mono', monospace;
+#rSide {
+    max-width: 75%;
+    width: 75%;
 }
 
-h1 {
-    font-size: 4em;
+#wrapper {
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
 }
-
-.ack {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.ack > h2, .ack > h3 {
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
-}
-
-.ack > h3 {
-    padding-bottom: 100px;
-}
+  
