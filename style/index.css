@@ -10,6 +10,7 @@ body:before {
     background-image: url("../images/backgroundV4.gif");
     background-color:#050113;
     background-position: center;
+    background-size: cover;
 }
 
 .navbar {
