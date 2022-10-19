@@ -9,6 +9,8 @@ body:before {
 	display:block;
     background-image: url("../images/backgroundV4.gif");
     background-color:#050113;
+    background-position: center;
+    background-size: cover;
 }
 
 .navbar {
