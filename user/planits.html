@@ -23,11 +23,27 @@
 
     <div id="wrapper">
         <div class="flex flex-col w-full lg:flex-row">
-            <div class="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center" id="lSide">
+            <div class="grid flex-grow h-full card bg-base-300 rounded-box place-items-center" id="lSide">
+                <h1 class="menu-title">Create a Planit</h1>
                 <div class="btn-group">
-                    <input type="radio" name="options" data-title="Select Planit" class="btn" checked/>
-                    <input type="radio" name="options" data-title="Add Planit" class="btn" />
-                  </div>
+                    <input type="radio" name="options" data-title="Habit" class="btn" />
+                    <input type="radio" name="options" data-title="Goal" class="btn" />
+                </div>
+                <input type="text" placeholder="Habit/Goal Name" class="input input-bordered w-full max-w-xs" id="text-input"/>
+                <select class="select select-bordered w-full max-w-xs" id="select-planit">
+                    <option disabled selected>Select a Planit</option>
+                    <option>Mercury</option>
+                    <option>Venus</option>
+                    <option>Earth</option>
+                    <option>Mars</option>
+                    <option>Jupiter</option>
+                    <option>Saturn</option>
+                    <option>Uranus</option>
+                    <option>Neptune</option>
+                    <option>Pluto</option>
+                </select>
+                <button class="btn">Create Planit</button>
+
             </div> 
             <div class="divider lg:divider-horizontal"> </div> 
             <div class="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center" id="rSide"></div>

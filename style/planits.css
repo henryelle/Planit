@@ -54,4 +54,31 @@ body:before {
     padding-right: 1em;
     width: 100%;
 }
+
+.menu-title {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.btn-group {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#text-input {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 15em;
+}
+
+#select-planit {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 15em;
+}
+
+.btn {
+    padding-top: 1em;
+    padding-bottom: 1em; 
+}
   
