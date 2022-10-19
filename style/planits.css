@@ -13,6 +13,10 @@ body:before {
     background-size: cover;
 }
 
+p {
+    display: none;
+}
+
 .navbar {
     background-color: rgba(0, 0, 0, 0);
 }
@@ -40,21 +44,31 @@ body:before {
     background: url("../images/buttonGreen.svg") no-repeat;
 }
 
-#lSide {
-    max-width: 25%;
-    width: 25%;
-}
-
-#rSide {
-    max-width: 75%;
-    width: 75%;
-}
-
 #wrapper {
     padding-top: 2em;
     padding-left: 1em;
     padding-right: 1em;
     width: 100%;
+    overflow: visible;
+    height: 100%;
+    max-height: 50%;
+}
+
+#lSide {
+    max-width: 25%;
+    width: 25%;
+    height: 100%;
+}
+
+#rSide {
+    max-width: 75%;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 100%;
+    overflow: auto;
 }
 
 .menu-title {
@@ -83,4 +97,13 @@ body:before {
     padding-top: 1em;
     padding-bottom: 1em; 
 }
-  
+
+/* .planit-div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+} */
+
+.planit {
+    width: 15rem;
+}

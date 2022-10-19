@@ -8,10 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../style/planits.css">
-    <script defer type="text/javascript" src="../scripts/calendar.js"></script>
-    <script type="text/javascript" src="../scripts/control.js"></script>
+    <script defer type="text/javascript" src="../scripts/planits.js"></script>
 
-    <title>Your Planit</title>
+    <title>Your Planits</title>
 </head>
 <body>
     <div class="navbar bg-base-100">
@@ -29,7 +28,7 @@
                     <input type="radio" name="options" data-title="Habit" class="btn" />
                     <input type="radio" name="options" data-title="Goal" class="btn" />
                 </div>
-                <input type="text" placeholder="Habit/Goal Name" class="input input-bordered w-full max-w-xs" id="text-input"/>
+                <input id="nameInput" type="text" placeholder="Habit/Goal Name" class="input input-bordered w-full max-w-xs" id="text-input"/>
                 <select class="select select-bordered w-full max-w-xs" id="select-planit">
                     <option disabled selected>Select a Planit</option>
                     <option>Mercury</option>
@@ -42,7 +41,7 @@
                     <option>Neptune</option>
                     <option>Pluto</option>
                 </select>
-                <button class="btn">Create Planit</button>
+                <button class="btn" onclick="createPlanit()">Create Planit</button>
 
             </div> 
             <div class="divider lg:divider-horizontal"> </div> 
