@@ -48,16 +48,16 @@ p {
     padding-top: 2em;
     padding-left: 1em;
     padding-right: 1em;
-    width: 100%;
-    overflow: visible;
-    height: 100%;
-    max-height: 50%;
 }
 
 #lSide {
     max-width: 25%;
     width: 25%;
-    height: 100%;
+    max-height: 200%;
+    height: 200%;
+    text-align: center;
+    border: 2px solid #81F57C;
+    border-radius: 25px;
 }
 
 #rSide {
@@ -72,13 +72,17 @@ p {
 }
 
 .menu-title {
+    font-family: 'Noto Sans Mono', monospace;
     padding-top: 1em;
     padding-bottom: 1em;
+    font-size: 1.25em;
 }
 
 .btn-group {
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-left: 10.25em;
+    align-items: center;
 }
 
 #text-input {
@@ -88,13 +92,18 @@ p {
 }
 
 #select-planit {
-    padding-top: 1em;
-    padding-bottom: 1em;
     width: 15em;
 }
 
-.btn {
-    padding-top: 1em;
+.createplanit {
+    padding-bottom: 1em; 
+}
+
+#nameInput {
+    width: 15em;
+}
+
+.menu-group {
     padding-bottom: 1em; 
 }
 
@@ -106,4 +115,18 @@ p {
 
 .planit {
     width: 15rem;
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+}
+  
+.flex-child {
+    flex: 1;
+    height: 100%;
+}  
+  
+.flex-child:first-child {
+    margin-right: 20px;
 }

@@ -126,6 +126,15 @@ ul li {
 
 .flex-child {
   flex: 1;
+  width: 75%;
+  padding-left: 1em;
+  /*border: 2px solid yellow;*/
+}  
+
+.flex-child-1 {
+  flex: 1;
+  width: 25%;
+  padding-left: 1em;
   /*border: 2px solid yellow;*/
 }  
 
@@ -140,11 +149,13 @@ ul li {
   text-align: center;;
 }
 
-.green {
-  background-color: white;
+.lSide {
+  padding-left: 1em;
   width: 100%;
   height: 50em;
   max-height: 50em;
+  border: 2px solid #81F57C;
+  border-radius: 25px;
 }
 
 #menu {
