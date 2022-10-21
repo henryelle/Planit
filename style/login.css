@@ -31,8 +31,8 @@ body:before {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
+    width: 60%;
     position: relative;
-    width: 55%;
     margin: 0 auto;
     background: url("/../images/loginBackground.svg") center center;
     background-repeat: no-repeat;
@@ -108,4 +108,3 @@ input[type=email], input[type=password] {
 .signuplink:hover {
     color: #81F57C;
 }
-
