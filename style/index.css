@@ -46,54 +46,57 @@ body:before {
 
 .container1 {
     position: relative;
-    margin-top: 8%;
-    margin-bottom: 8%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    overflow: hidden;
     text-align: center;
 }
 
+.textContainer {
+    position: relative;
+}
+
 .welcometo {
+    position: relative;
     font-size: 2em;
 }
 
 .planitu {
+    position: relative;
     font-size: 4em;
 }
 
 .slogan {
+    position: relative;
     margin-bottom: 1%;
     font-size: 1em;
 }
 
-/*
 @keyframes floatingAstronautAnimation {
     from {
-        margin-left: 100%;
-    }
-    to {
-        margin-left: -20%;
-    }
-}*/
-
-@keyframes floatingAstronautAnimation {
-    from {
-        margin-left: 50%;
-        width: 5%;
-        opacity: 0%;
-    }
-    to {
+        margin-top: 10%;
         margin-left: 100%;
         width: 15%;
         opacity: 100%;
     }
+    85% {
+        opacity: 100%;
+    }
+    to {
+        margin-left: 50%;
+        width: 4%;
+        opacity: 0%;
+    }
 }
 
-img {
-    width: 15%;
+.imageContainer {
+    position: absolute;
+    display: grid;
+    z-index: 0;
     animation-name: floatingAstronautAnimation;
     animation-duration: 14s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-direction: reverse;
 }
 
 .container2 {
