@@ -29,6 +29,11 @@ body:before {
     height: 5em;
     margin-left: 13px;
     padding-right: 18px;
+    background: url("../images/logo.svg") no-repeat;
+}
+
+.logo:hover {
+    background: url("../images/logoHover.svg") no-repeat;
 }
 
 .m-4 {
@@ -42,6 +47,7 @@ body:before {
 
 .container1, .container2 {
     font-family: 'Noto Sans Mono', monospace;
+    color: #e0f1ff;
 }
 
 .container1 {
@@ -91,7 +97,6 @@ body:before {
 
 .imageContainer {
     position: absolute;
-    display: grid;
     z-index: 0;
     animation-name: floatingAstronautAnimation;
     animation-duration: 14s;
@@ -100,10 +105,21 @@ body:before {
 }
 
 .container2 {
-    margin-top: 20%;
-    margin-left: 4%;
-    margin-bottom: 20%;
-    width: 40%;
+    position: relative;
+    margin: auto;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    width: 60%;
+    text-align: center;
+    background: url("/../images/loginBackground.svg") center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.about {
+    position: relative;
+    margin: auto;
+    width: 60%;
 }
 
 .ack > h2, .ack > h3 {
