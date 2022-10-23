@@ -117,6 +117,23 @@ p {
     width: 15rem;
 }
 
+.planit:hover{
+    -webkit-transform: rotate(360deg);
+    -webkit-transition-duration: 1.5s;
+    -webkit-transition-delay: now;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    transform: rotate(360deg);
+    transition-duration: 1.5s;
+    transition-delay: now;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;   
+}
+
+.planit:hover {
+    filter: drop-shadow(0px 0px 15px rgb(255, 255, 255));
+}
+
 .flex-container {
     display: flex;
     height: 100%;
