@@ -23,8 +23,14 @@ body:before {
 
 .logo {
     height: 5em;
+    width: 7%;
     margin-left: 13px;
     padding-right: 18px;
+    background: url("../images/logo.svg") no-repeat;
+}
+
+.logo:hover {
+    background: url("../images/logoHover.svg") no-repeat;
 }
 
 .container {
