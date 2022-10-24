@@ -88,14 +88,17 @@ body:before {
 
 .m-4 {
     padding-bottom: 10px;
+    color: #d3e0ea;
     background: url("../images/buttonWhite.svg") no-repeat;
 }
 
 .m-4:hover {
+    color: #deecde;
     background: url("../images/buttonGreen.svg") no-repeat;
 }
 
 #signout:hover {
+    color: #e9d8d5;
     background: url("../images/buttonRed.svg") no-repeat;
 }
 
