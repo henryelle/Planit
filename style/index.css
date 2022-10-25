@@ -27,7 +27,7 @@ body:before {
 
 .logo {
     height: 5em;
-    width: 7%;
+    width: 100%;
     margin-left: 13px;
     padding-right: 18px;
     background: url("../images/logo.svg") no-repeat;
@@ -110,8 +110,10 @@ body:before {
 .container2 {
     position: relative;
     margin: auto;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     width: 60%;
     text-align: center;
     background: url("/../images/loginBackground.svg") center center;
