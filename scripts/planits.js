@@ -1,3 +1,18 @@
+var months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
+
 function createPlanit() {
     document.getElementById("select-planit").style.border = "none"
     document.getElementById("nameInput").style.border = "none"
@@ -108,10 +123,10 @@ for (var i = 0; i < 42; i++) {
     jQuery(jQuery(".all-date ul li")[i]).text() == curDate &&
     jQuery(jQuery(".all-date ul li")[i]).css("opacity") == 1
   ) {
-    jQuery(jQuery(".all-date ul li")[i]).css({
-      "background-color": "#AE7CFA",
-      color: "#fff"
-    });
+    // jQuery(jQuery(".all-date ul li")[i]).css({
+    //   "background-color": "#AE7CFA",
+    //   color: "#fff"
+    // });
   }
 }
 
@@ -210,13 +225,26 @@ function pageMonth(direction) {
       jQuery(jQuery(".all-date ul li")[i]).text() == curDate &&
       jQuery(jQuery(".all-date ul li")[i]).css("opacity") == 1
     ) {
-      jQuery(jQuery(".all-date ul li")[i]).css({
-        "background-color": "#AE7CFA",
-        color: "#fff"
-      });
+      // jQuery(jQuery(".all-date ul li")[i]).css({
+      //   "background-color": "#AE7CFA",
+      //   color: "#fff"
+      // });
     }
   }
 }
 /*
 HANDLES CALENDAR
 */
+
+// https://stackoverflow.com/questions/55622502/change-li-background-color-when-clicked
+//TODO RECORD THE DAY IN PHP SEND TO DATABASE APPEND TO DATES LIST
+// added 10/25
+$(document).ready(function(){
+  $('.all-date ul li').click(function(e){
+  $(e.target).css('backgroundColor', '#AE7CFA');
+  $(e.target).css('color','white');
+  let day = $(e.target).text();
+  let month = months.indexOf($("#month-box").text());
+  // maybe call PHP here and send row insert
+   });
+});
