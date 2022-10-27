@@ -138,7 +138,7 @@ input[type=email], input[type=password] {
     font-family: 'Noto Sans Mono', monospace;
     font-weight: bold;
     padding-top: 40px;
-    color:#a7cbe8;
+    color: #e0f1ff;
 }
 
 .login-form {
@@ -154,7 +154,7 @@ input[type=email], input[type=password] {
 .label-text {
     font-size: 15px;
     font-family: 'Noto Sans Mono', monospace;
-    color:#a7cbe8;
+    color:#e0f1ff;
 }
 
 input[type=email], input[type=password] {
@@ -167,6 +167,9 @@ input[type=email], input[type=password] {
 
 .form-submit {
     text-align: center;
+}
+
+input[type=submit] {
     margin: 2px 0;
     padding-top: 10px;
     padding-bottom: 14px;
@@ -174,10 +177,10 @@ input[type=email], input[type=password] {
     border-color: #A7CBE8;
     font-size: 17px;
     font-family: 'Noto Sans Mono', monospace;
-    color: #A7CBE8;
+    color: #e0f1ff;
 }
 
-.form-submit:hover {
+input[type=submit]:hover {
     border: 1px;
     border-color: #81F57C;
     color: #81F57C;
@@ -188,7 +191,7 @@ input[type=email], input[type=password] {
     margin-top: 2%;
     font-size: 14px;
     font-family: 'Noto Sans Mono', monospace;
-    color:#a7cbe8;
+    color:#e0f1ff;
 }
 
 .signuplink {

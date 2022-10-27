@@ -81,6 +81,9 @@ input[type=email], input[type=password] {
 
 .form-submit {
     text-align: center;
+}
+
+input[type=submit] {
     margin: 2px 0;
     padding-top: 10px;
     padding-bottom: 14px;
@@ -91,7 +94,7 @@ input[type=email], input[type=password] {
     color: #A7CBE8;
 }
 
-.form-submit:hover {
+input[type=submit]:hover {
     border: 1px;
     border-color: #81F57C;
     color: #81F57C;

@@ -29,7 +29,6 @@ body:before {
     height: 5em;
     width: 100%;
     margin-left: 13px;
-    padding-right: 18px;
     background: url("../images/logo.svg") no-repeat;
 }
 
@@ -85,7 +84,7 @@ body:before {
     from {
         margin-top: 10%;
         margin-left: 100%;
-        width: 15%;
+        width: 10%;
         opacity: 100%;
     }
     85% {
@@ -125,6 +124,7 @@ body:before {
     position: relative;
     margin: auto;
     width: 60%;
+    font-size: 1vw;
 }
 
 .ack > h2, .ack > h3 {
