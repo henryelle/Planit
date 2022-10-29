@@ -50,11 +50,26 @@
       <button class="btn btn-outline btn-wide" onclick="pageMonth('left')">Previous Month</button> 
       <button class="btn btn-outline btn-wide" onclick="pageMonth('right')">Next Month</button>
     </div>
+
     <div id="menu">
       <input type="submit" class="menu-control" value="Add" onclick="toggleAddMenu()"></input>
       <form id="task-form">
-        <label for="title">Title</label><br>
-        <input type="text" id="title" name="title"><br>
+        <h1 class="menu-title">CREATE A TASK</h1>
+        <input id="nameInput" type="text" placeholder="Task Name" class="input input-bordered w-full max-w-xs"/>
+        <input id="nameInput" type="text" placeholder="Date" class="input input-bordered w-full max-w-xs"/>
+        <input id="nameInput" type="text" placeholder="Start Time" class="input input-bordered w-full max-w-xs"/>
+        <input id="nameInput" type="text" placeholder="End Time" class="input input-bordered w-full max-w-xs"/>
+        <input id="nameInput" type="text" placeholder="Location" class="input input-bordered w-full max-w-xs"/>
+        <h3 class="priority">Priority:</h3>
+        <div class="rating">
+          <input type="radio" name="rating-9" class="rating-hidden"> 
+          <input type="radio" name="rating-9" class="mask mask-star-2"> 
+          <input type="radio" name="rating-9" checked="checked" class="mask mask-star-2"> 
+          <input type="radio" name="rating-9" class="mask mask-star-2"> 
+          <input type="radio" name="rating-9" class="mask mask-star-2"> 
+          <input type="radio" name="rating-9" class="mask mask-star-2">
+        </div>
+        <a class="btn m-4" id="submit" href="/">Submit</a>
       </form>
     </div>
 

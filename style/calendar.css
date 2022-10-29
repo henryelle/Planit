@@ -179,6 +179,7 @@ ul li {
 
 .menu-control {
   background: url("../images/buttonGreen.svg") no-repeat;
+  background-size: cover;
   width: 65px;
   text-align: center;
   cursor: pointer;
@@ -190,5 +191,40 @@ ul li {
   margin: auto;
   display: none;
   text-align: center;
-  margin-top: 1rem;
+  width:48%;
+  margin-top: 1em;
+  padding-bottom:1em;
+  border: 2px solid #81F57C;
+  border-radius: 25px;
 }
+
+#nameInput {
+  width: 13em;
+  margin-left: 9.1em;
+  margin-bottom:1em;
+  text-align: center;
+  display: block;
+}
+
+.priority {
+  text-align: center;
+  display: block;
+}
+
+.rating {
+  padding-top: 0.2em;
+  text-align: center;
+  display: block;
+}
+
+.menu-title {
+  font-family: 'Noto Sans Mono', monospace;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1.25em;
+}
+
+.priority {
+  font-family: 'Noto Sans Mono', monospace;
+}
+
