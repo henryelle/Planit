@@ -108,10 +108,16 @@ function pageMonth(direction) {
   var curYear = new Date().getFullYear();
 
   if(direction == "left") {
+    if (currentMonth == "January"){
+      return;
+    }
     var curMonth = months.indexOf(currentMonth) - 1;
   }
 
   if(direction == "right") {
+    if(currentMonth == "December"){
+      return;
+    }
     var curMonth = months.indexOf(currentMonth) + 1;
   }
 
