@@ -83,9 +83,12 @@ body:before {
 .logo {
     height: 5em;
     width: 7%;
-    margin-left: 13px;
-    padding-right: 18px;
+    margin-left: 1em;
     background: url("../images/logo.svg") no-repeat;
+}
+
+#text {
+    width:35%;
 }
 
 .logo:hover {
