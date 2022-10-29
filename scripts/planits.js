@@ -24,14 +24,15 @@ function createPlanit() {
         document.getElementById("select-planit").style.border = "2px solid #DB5D48"
         return;
     }
-    if(!name.match(/^[A-za-z09]*$/)) {
-        console.log("name:" + name)
-        document.getElementById("nameInput").style.border = "2px solid #DB5D48"
-        return;
+    if(name.length == 0) {
+      document.getElementById("nameInput").style.border = "2px solid #DB5D48"
+      return;
     }
     let imgPath = "../images/planets/" + planet.toLowerCase() + ".svg";
     // $('#rSide').append('<div class="col"><img class="planit col" src = '+ imgPath +' /></div>');
     $('#rSide').append('<a href="#" title="'+name+'"><img class="planit" src = '+ imgPath +' /></a>');
+
+    document.getElementById("nameInput").value = '';
 }
 
 // TODO add call to php file that adds planit to database
