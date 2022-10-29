@@ -93,6 +93,11 @@ ul li {
   color: #fff;
 }
 
+.all-date li.monthdate:active {
+  background-color: #AE7CFA;
+  color: #fff;
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0);
 }
