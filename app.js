@@ -11,7 +11,7 @@ connection.connect((err) =>{
   if (err) throw err;
   connection.query("SELECT * FROM users", function(err, result, fields) {
     if (err) throw err;
-    console.log("Connection has been established");
+    console.log("Connection has been established!");
   });
 });
 module.exports = connection;
