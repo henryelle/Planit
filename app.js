@@ -1,16 +1,17 @@
-var mysql = require('mysql');
+const mysql = require('mysql');
 
-var con = mysql.createConnection({
+const connection = mysql.createConnection({
   host: "199.231.187.232",
+  database: "Planit_You",
   user: "hosanna",
-  password: "*"
+  password: "gillian"
 });
 
-con.connect(function(err) {
+connection.connect((err) =>{
   if (err) throw err;
-  console.log("Connected!");
-  con.query("CREATE DATABASE mydb", function (err, result) {
+  con.query("SELECT * FROM users", function(err, result, fields) {
     if (err) throw err;
-    console.log("Database created");
+    console.log("Connection has been established");
   });
 });
+module.exports = connection;
