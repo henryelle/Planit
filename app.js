@@ -9,7 +9,7 @@ const connection = mysql.createConnection({
 
 connection.connect((err) =>{
   if (err) throw err;
-  con.query("SELECT * FROM users", function(err, result, fields) {
+  connection.query("SELECT * FROM users", function(err, result, fields) {
     if (err) throw err;
     console.log("Connection has been established");
   });
