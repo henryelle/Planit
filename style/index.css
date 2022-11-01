@@ -1,0 +1,150 @@
+body:before {
+    content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	display:block;
+    background-image: url("../images/backgroundV4.gif");
+    background-color:#050113;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 1.1em;
+}
+
+.flex-1 {
+    height: 100px;
+}
+
+.btn {
+    border: none;
+}
+
+.logo {
+    height: 5em;
+    width: 100%;
+    padding-top: 5em;
+    margin-left: 1em;
+    background: url("../images/logo.svg") no-repeat;
+}
+
+.logo:hover {
+    background: url("../images/logoHover.svg") no-repeat;
+}
+
+.m-4 {
+    padding-bottom: 10px;
+    color: #d3e0ea;
+    background: url("../images/buttonWhite.svg") no-repeat;
+}
+
+.m-4:hover {
+    color: #deecde;
+    background: url("../images/buttonGreen.svg") no-repeat;
+}
+
+.container1, .container2 {
+    font-family: 'Noto Sans Mono', monospace;
+    color: #e0f1ff;
+}
+
+.container1 {
+    position: relative;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.textContainer {
+    position: relative;
+}
+
+.welcometo {
+    position: relative;
+    font-size: 2em;
+}
+
+.planitu {
+    position: relative;
+    font-size: 4em;
+}
+
+.slogan {
+    position: relative;
+    margin-bottom: 1%;
+    font-size: 1em;
+}
+
+@keyframes floatingAstronautAnimation {
+    from {
+        margin-top: 10%;
+        margin-left: 100%;
+        width: 10%;
+        opacity: 100%;
+    }
+    85% {
+        opacity: 100%;
+    }
+    to {
+        margin-left: 50%;
+        width: 4%;
+        opacity: 0%;
+    }
+}
+
+.imageContainer {
+    position: absolute;
+    z-index: 0;
+    animation-name: floatingAstronautAnimation;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.container2 {
+    position: relative;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 60%;
+    text-align: center;
+    background: url("/../images/loginBackground.svg") center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.about {
+    position: relative;
+    margin: auto;
+    width: 60%;
+    font-size: 1vw;
+}
+
+.ack > h2, .ack > h3 {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+.ack > h3 {
+    padding-bottom: 50px;
+}
+
+
+/*
+.info {
+    text-align: center;
+    max-width: 75%;
+    margin: 0 auto;
+}
+*/
