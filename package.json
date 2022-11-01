@@ -1,6 +1,9 @@
 {
   "dependencies": {
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "body-parser": "^1.17.1",
+    "express": "^4.14.1",
+    "jsonwebtoken": "^7.3.0"
   },
   "name": "planit",
   "description": "",
@@ -15,7 +18,7 @@
     "url": "git+https://github.com/henryelle/Planit.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "\"\"",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/henryelle/Planit/issues"
