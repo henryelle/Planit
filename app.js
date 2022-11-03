@@ -7,7 +7,8 @@ const connection = require('./db');
 
 dotenv.config({ path: './.env'})
 
-app.set('view-engine', 'ejs')
+app.set('views', path.join(__dirname, 'views'));
+app.set('view-engine', 'ejs');
 
 app.use(sesssion({
   secret: '121622infotech',
