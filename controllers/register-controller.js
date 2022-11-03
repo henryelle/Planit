@@ -25,5 +25,5 @@ module.exports.register= function (req,res){
                 message: 'The user was created successfuly!'
             })
         }
-    })
+    });
 }

@@ -1,5 +1,5 @@
 const express = require("express");
-const bodyParser = require("body-parser");
+const bodyParser = require('body-parser');
 
 const connection = require('./db');
 const app = express();
@@ -20,4 +20,8 @@ app.get('/login.html', function(req,res){
 
 app.post('/api/register', registerController.register);
 app.post('/api/authenticate', authenticateController.authenticate);
+
+console.log(authenticateController);
+app.post('/controllers/register-controller', registerController.register);
+app.post('/controllers/authenticate-controller', authenticateController.authenticate);
 
