@@ -9,10 +9,11 @@ const connection = mysql.createConnection({
 
 
 connection.connect((err) =>{
-  if (err) throw err;
-  connection.query("SELECT * FROM users", function(err, result, fields) {
-    if (err) throw err;
-    console.log("Connection has been established!");
+  if (!err){
+    console.log("Connection has been established!")
+  }
+  else{
+    console.log("Connection can't be established!");
+  }
   });
-});
 module.exports = connection;
