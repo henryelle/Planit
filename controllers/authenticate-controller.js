@@ -3,7 +3,7 @@ cryptr = new Cryptr()
 
 const connection = require('./../db');
 module.exports.authenticate=function(req,res){
-    var email = req.body.email;
+    var accountname = req.body.accountname;
     var password = req.body.password;
     //password= bcrypt.compare(plaintextPassword, hash, function(err, result){
         //if (result){
@@ -11,7 +11,7 @@ module.exports.authenticate=function(req,res){
        // }
    // });
 
-    connection.query('SELECT * FROM users WHERE email = ?',[email], function(error,results,fields){
+    connection.query('SELECT * FROM users WHERE AccountName = ?',[accountname], function(error,results,fields){
         if(error){
             res.json({
                 status:false,
