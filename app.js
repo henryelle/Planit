@@ -2,6 +2,9 @@ const express = require("express")
 const app = express();
 const dotenv = require("dotenv");
 
+const mysql = require('mysql');
+const connection = require('./db');
+
 dotenv.config({ path: './.env'})
 
 app.set('view-engine', 'ejs')
