@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt');
 const express = require("express");
-const connection = require('./../db');
+const connection = require('./../db.js');
 
 module.exports.register= function (req,res){
         bcrypt.hash(req.body.password, 10, function(err, bcryption){
