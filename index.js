@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require('body-parser');
-
+//Database connection from db.js file
 const connection = require('./db');
 const app = express();
 
@@ -10,6 +10,7 @@ const registerController=require('./controllers/register-controller');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
+
 app.get('/', function (req,res){
     res.sendFile(__dirname + "/" + "index.html");
 })
@@ -17,7 +18,7 @@ app.get('/', function (req,res){
 app.get('/login.html', function(req,res){
     res.sendFile(__dirname + "/" + "login.html");
 })
-
+//Handlers for login and registration
 app.post('/api/register', registerController.register);
 app.post('/api/authenticate', authenticateController.authenticate);
 
