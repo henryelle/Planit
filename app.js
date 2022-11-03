@@ -1,4 +1,4 @@
-const express = require("express")
+/*const express = require("express")
 const app = express();
 const dotenv = require("dotenv");
 
@@ -31,4 +31,4 @@ connection.connect((err) =>{
     console.log("Connection has been established!");
   });
 });
-module.exports = connection;
+module.exports = connection;*/
