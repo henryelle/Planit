@@ -19,7 +19,7 @@ module.exports.register= function (req,res){
         if(error){
             res.json({
                 status:false,
-                message: 'User could not be entered.'
+                message: 'User could not be created.'
             })
         }
         else{
