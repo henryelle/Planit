@@ -9,7 +9,7 @@ module.exports.register= function (req,res){
         var users={
             "AccountName":req.body.name,
             "Email":req.body.email,
-            "Password": bcryption,
+            "Pass": bcryption,
             "FirstName": req.body.firstname,
             "LastName": req.body.lastname
         }
