@@ -1,9 +1,4 @@
 const mysql = require("mysql");
-const express = require("express")
-const app = express();
-const dotenv = require("dotenv");
-
-dotenv.config({ path: './.env'})
 
 const connection = mysql.createConnection({
   host: '199.231.187.232',
