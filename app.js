@@ -1,9 +1,16 @@
-const mysql = require("mysql");
 const express = require("express")
 const app = express();
 const dotenv = require("dotenv");
 
 dotenv.config({ path: './.env'})
+
+app.set('view-engine', 'ejs')
+
+app.use(sesssion({
+  secret: '121622infotech',
+  resave: true,
+  saveUninitialized: true
+}));
 
 const connection = mysql.createConnection({
   host: '199.231.187.232',
