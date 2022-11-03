@@ -1,5 +1,4 @@
-const Cryptr = require('cryptr');
-cryptr = new Cryptr()
+const bcrypt = require('bcrypt');
 
 const connection = require('./../db');
 module.exports.authenticate=function(req,res){
@@ -19,18 +18,19 @@ module.exports.authenticate=function(req,res){
             })
         }else{
             if(results.length > 0){
-                if([0].password==password){
+                bcrypt.compare(password, results[0].password, function(err, hashMatch){
+                    if(hashMatch){
                     res.json({
                         status:true,
                         message:"Authentication successful."
-                    })
+                    });
                 }else{    
                     res.json({
                         status:false,
                         message:"Email and password do not match."
                     });
                 }
-            
+            });
         }
         else{
             res.json({
