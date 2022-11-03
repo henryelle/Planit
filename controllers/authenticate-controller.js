@@ -4,11 +4,6 @@ const connection = require('./../db');
 module.exports.authenticate=function(req,res){
     var accountname = req.body.accountname;
     var password = req.body.password;
-    //password= bcrypt.compare(plaintextPassword, hash, function(err, result){
-        //if (result){
-
-       // }
-   // });
 
     connection.query('SELECT * FROM users WHERE AccountName = ?',[accountname], function(error,results,fields){
         if(error){
