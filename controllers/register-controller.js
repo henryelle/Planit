@@ -5,11 +5,11 @@ const connection = require('./../db');
 module.exports.register= function (req,res){
         bcrypt.hash(req.body.password, 10, function(err, bcryption){
         var users={
-            "accountname":req.body.name,
-            "email":req.body.email,
-            "password": bcryption,
-            "firstname": req.body.firstname,
-            "lastname": req.body.lastname
+            "AccountName":req.body.name,
+            "Email":req.body.email,
+            "Password": bcryption,
+            "FirstName": req.body.firstname,
+            "LastName": req.body.lastname
         }
         });
     
