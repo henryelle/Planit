@@ -1,11 +1,11 @@
-const bcrypt = require('bcrypt');
+const bcryptjs = require('bcryptjs');
 const express = require("express");
 const connection = require('./../db.js');
 
 console.log("controller says hi");
 
 module.exports.register= function (req,res){
-        bcrypt.hash(req.body.password, 10, function(err, bcryption){
+        bcryptjs.hash(req.body.password, 10, function(err, bcryption){
         var users={
             "AccountName":req.body.name,
             "Email":req.body.email,
