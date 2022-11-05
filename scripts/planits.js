@@ -264,9 +264,9 @@ $(document).ready(function(){
 });
 });
 
-$( "body" ).click(function( event ) {
-  $( ".planit" ).html( "Clicked a  " + event.target.attr("title") );
-});
+// $( "body" ).click(function( event ) {
+//   $( ".planit" ).html( "Clicked a  " + event.target.attr("title") );
+// });
 
 $('#rSide').on('click', 'a', function() {
   var planit = ($(this).attr('title'));
