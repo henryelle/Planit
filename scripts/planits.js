@@ -13,13 +13,14 @@ var months = [
   "December"
 ];
 
+var recordedDays = {};
+
 function createPlanit() {
     document.getElementById("select-planit").style.border = "none"
     document.getElementById("nameInput").style.border = "none"
     let div = document.getElementById("rSide");
     let planet = document.getElementById("select-planit").value
     var name = document.getElementById("nameInput").value
-    console.log(name);
     if(planet.includes("Select")) {
         document.getElementById("select-planit").style.border = "2px solid #DB5D48"
         return;
@@ -249,3 +250,39 @@ $(document).ready(function(){
   // maybe call PHP here and send row insert
    });
 });
+
+// HOOO BOY HERE WE GO
+
+
+// document.querySelectorAll('.planit')
+//   .forEach((planit) => {
+    
+//   });
+$(document).ready(function(){
+  $("a").click(function() {
+    console.log("hi");
+});
+});
+
+$( "body" ).click(function( event ) {
+  $( ".planit" ).html( "Clicked a  " + event.target.attr("title") );
+});
+
+$('#rSide').on('click', 'a', function() {
+  var planit = ($(this).attr('title'));
+  console.log(planit)
+});
+
+// var planit = document.getElementsByTagName("a")
+// console.log(planit)
+
+// planit.forEach(element => {
+//   element.onclick = function () {
+//     console.log(planit.getAttribute('title'))
+//   }
+// });
+
+// function recordDays() {
+  
+
+// }
