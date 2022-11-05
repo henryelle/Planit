@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt');
 
-const connection = require('./../db');
+const connection = require('./../db.js');
 module.exports.authenticate=function(req,res){
     var accountname = req.body.accountname;
     var password = req.body.password;
