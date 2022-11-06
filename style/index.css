@@ -99,7 +99,7 @@ body:before {
     }
 }
 
-.imageContainer {
+.imageContainer1 {
     position: absolute;
     z-index: 0;
     animation-name: floatingAstronautAnimation;
@@ -108,11 +108,37 @@ body:before {
     animation-timing-function: linear;
 }
 
+/*@keyframes floatingMeteorAnimation {
+    from {
+        margin-top: 25%;
+        margin-left: -10%;
+        width: 7%;
+        opacity: 100%;
+    }
+    85% {
+        opacity: 100%;
+    }
+    to {
+        margin-left: 40%;
+        width: 2%;
+        opacity: 0%;
+    }
+}
+
+.imageContainer2 {
+    position: absolute;
+    z-index: 0;
+    animation-name: floatingMeteorAnimation;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}*/
+
 .container2 {
     position: relative;
     margin: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 15%;
+    margin-bottom: 15%;
     padding-top: 10%;
     padding-bottom: 10%;
     width: 60%;
