@@ -258,41 +258,39 @@ $(document).ready(function(){
 //   .forEach((planit) => {
     
 //   });
-$(document).ready(function(){
-  $("a").click(function() {
-    console.log("hi");
-});
-});
-
-// $( "body" ).click(function( event ) {
-//   $( ".planit" ).html( "Clicked a  " + event.target.attr("title") );
+// $(document).ready(function(){
+//   $("a").click(function() {
+//     console.log("hi");
+// });
 // });
 
 $('#rSide').on('click', 'a', function() {
-  var recordedDays = [];
-  var planit = ($(this).attr('title'));
   $("li").each(function(){
     if($(this).css("background-color") == "rgb(174, 124, 250)") {
-      //console.log(this.innerHTML)
-      recordedDays.push(this.innerHTML)
+   $(this).css("background-color", "rgb(5, 1, 19)")
     }
-    
+  }).delay(100)
+  var recordedDays = []
+  var planit = ($(this).attr('title'));
+  if(planit in recordedPlanits) {
+    recordedDays = recordedPlanits[planit]
+    $("li").each(function(){
+      if(recordedDays.includes(this.innerHTML)) {
+        $(this).css("background-color", "rgb(174, 124, 250)")
+    }  
+      //recordedPlanits[planit] = recordedDays
+    })
+  }
+  else {
+  $("li").each(function(){
+    if($(this).css("background-color") == "rgb(174, 124, 250)") {
+      if(!recordedDays.includes(this.innerHTML)){
+        recordedDays.push(this.innerHTML)
+    }
+  }  
     recordedPlanits[planit] = recordedDays
-    
   })
-  console.log(recordedPlanits);
+}
+  console.log(recordedPlanits[planit])
+  console.log(recordedPlanits)
 });
-
-// var planit = document.getElementsByTagName("a")
-// console.log(planit)
-
-// planit.forEach(element => {
-//   element.onclick = function () {
-//     console.log(planit.getAttribute('title'))
-//   }
-// });
-
-// function recordDays() {
-  
-
-// }
