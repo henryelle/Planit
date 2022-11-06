@@ -55,12 +55,14 @@
       <input type="submit" class="menu-control" value="Add" onclick="toggleAddMenu()"></input>
       <form id="task-form">
         <h1 class="menu-title">CREATE A TASK</h1>
-        <input id="nameInput" type="text" placeholder="Task Name" class="input input-bordered w-full max-w-xs"/>
-        <input id="nameInput" type="text" placeholder="Date" class="input input-bordered w-full max-w-xs"/>
-        <input id="nameInput" type="text" placeholder="Start Time" class="input input-bordered w-full max-w-xs"/>
-        <input id="nameInput" type="text" placeholder="End Time" class="input input-bordered w-full max-w-xs"/>
-        <input id="nameInput" type="text" placeholder="Location" class="input input-bordered w-full max-w-xs"/>
-        <h3 class="priority">Priority:</h3>
+        <div class="inputtext">
+          <input id="nameInput" type="text" placeholder="Task Name" class="input input-bordered w-full max-w-xs"/>
+          <input id="nameInput" type="text" placeholder="Date" class="input input-bordered w-full max-w-xs"/>
+          <input id="nameInput" type="text" placeholder="Start Time" class="input input-bordered w-full max-w-xs"/>
+          <input id="nameInput" type="text" placeholder="End Time" class="input input-bordered w-full max-w-xs"/>
+          <input id="nameInput" type="text" placeholder="Location" class="input input-bordered w-full max-w-xs"/>
+        </div>
+        <h3 class="priority">PRIORITY:</h3>
         <div class="rating">
           <input type="radio" name="rating-9" class="rating-hidden"> 
           <input type="radio" name="rating-9" class="mask mask-star-2"> 
@@ -69,7 +71,7 @@
           <input type="radio" name="rating-9" class="mask mask-star-2"> 
           <input type="radio" name="rating-9" class="mask mask-star-2">
         </div>
-        <a class="btn m-4" id="submit" href="/">Submit</a>
+        <a class="btn m-4" id="submit" href="/">Submit Task</a>
       </form>
     </div>
 
