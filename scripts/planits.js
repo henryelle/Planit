@@ -291,6 +291,41 @@ $('#rSide').on('click', 'a', function() {
     recordedPlanits[planit] = recordedDays
   })
 }
-  console.log(recordedPlanits[planit])
-  console.log(recordedPlanits)
+  // console.log(recordedPlanits[planit])
+  // console.log(recordedPlanits)
 });
+
+/*
+manage pop up
+*/
+
+$('#rSide').on('click', 'a', function() {
+  //console.log(this.title);
+  var planit = this;
+  var closePopup = document.getElementById("popupclose");
+  var overlay = document.getElementById("overlay");
+  var popup = document.getElementById("popup");
+  // Close Popup Event
+  closePopup.onclick = function() {
+    overlay.style.display = 'none';
+    popup.style.display = 'none';
+  };
+  // Show Overlay and Popup
+  planit.onclick = function() {
+    overlay.style.display = 'block';
+    popup.style.display = 'block';
+    
+  }
+  var labelText = document.getElementById("labelText");
+  labelText.innerHTML = this.title + " notes."
+    });
+
+
+//var planit = $(document).getPlanitName();
+
+
+
+
+/*
+manage pop up
+*/
