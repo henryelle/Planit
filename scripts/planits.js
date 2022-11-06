@@ -13,7 +13,7 @@ var months = [
   "December"
 ];
 
-var recordedDays = {};
+var recordedPlanits = {};
 
 function createPlanit() {
     document.getElementById("select-planit").style.border = "none"
@@ -269,8 +269,18 @@ $(document).ready(function(){
 // });
 
 $('#rSide').on('click', 'a', function() {
+  var recordedDays = [];
   var planit = ($(this).attr('title'));
-  console.log(planit)
+  $("li").each(function(){
+    if($(this).css("background-color") == "rgb(174, 124, 250)") {
+      //console.log(this.innerHTML)
+      recordedDays.push(this.innerHTML)
+    }
+    
+    recordedPlanits[planit] = recordedDays
+    
+  })
+  console.log(recordedPlanits);
 });
 
 // var planit = document.getElementsByTagName("a")
