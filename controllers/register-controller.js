@@ -1,19 +1,18 @@
-const bcryptjs = require('bcryptjs');
+const Cryptr = require('bcrypt');
 const express = require("express");
 const connection = require('./../db.js');
 
 console.log("controller says hi");
 
 module.exports.register= function (req,res){
-        bcryptjs.hash(req.body.password, 10, function(err, bcryption){
+        const passCrypt = Cryptr.encrypt(req.body.password);
         var users={
-            "AccountName":req.body.name,
+            "AccountName":req.body.username,
             "Email":req.body.email,
-            "Pass": bcryption,
+            "Pass": passCrypt,
             "FirstName": req.body.firstname,
             "LastName": req.body.lastname
         }
-        });
     
     connection.query('INSERT INTO users SET ?', users, function(error,results,fields){
         if(error){

@@ -1,4 +1,5 @@
-const bcrypt = require('bcrypt');
+const Cryptr = require('cryptr');
+cryptr = new Cryptr('IT1216122');
 
 const connection = require('./../db.js');
 module.exports.authenticate=function(req,res){
@@ -13,8 +14,8 @@ module.exports.authenticate=function(req,res){
             })
         }else{
             if(results.length > 0){
-                bcrypt.compare(password, results[0].password, function(err, hashMatch){
-                    if(hashMatch){
+                decryption = cryptr.decrypt(results[0].password);
+                    if(password == decryption){
                     res.json({
                         status:true,
                         message:"Authentication successful."
@@ -25,7 +26,6 @@ module.exports.authenticate=function(req,res){
                         message:"Email and password do not match."
                     });
                 }
-            });
         }
         else{
             res.json({
