@@ -157,23 +157,22 @@ ul li {
 
 .btn-group {
   margin: 0 auto;
-  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 80%;
   display: block;
-  text-align: center;;
+  text-align: center;
 }
 
 .lSideTop {
   padding-left: 1em;
   width: 100%;
-  height: 50em;
-  max-height: 50em;
+  height: 100%;
   background: url("/../images/trackerbox3.svg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: 0 100%;
-  margin-top: 0%;
+  background-size: cover;
+  background-position: top;
   /*border: 2px solid #81F57C;*/
-  border-radius: 25px;
 }
 
 #menu {
@@ -186,7 +185,7 @@ ul li {
 .menu-control {
   background: url("../images/buttonGreen.svg") no-repeat;
   background-size: cover;
-  width: 65px;
+  width: 70px;
   text-align: center;
   cursor: pointer;
   margin: auto;
@@ -225,7 +224,7 @@ ul li {
 .menu-title {
   font-family: 'Noto Sans Mono', monospace;
   padding-top: 1em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   font-size: 1.25em;
 }
 
