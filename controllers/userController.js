@@ -59,7 +59,7 @@ exports.loginPage = (req, res, next) => {
     res.render("login");
 };
 
-exports.signup = async (req, res, next) => {
+/*exports.signup = async (req, res, next) => {
     const errors = validationResult(req);
     const {body} = req;
 
@@ -91,4 +91,4 @@ exports.signup = async (req, res, next) => {
     catch(e){
         next(e);
     }
-};
+};*/
