@@ -3,10 +3,10 @@ cryptr = new Cryptr('IT1216122');
 
 const connection = require('./../db.js');
 module.exports.authenticate=function(req,res){
-    var accountname = req.body.accountname;
+    var username = req.body.username;
     var password = req.body.password;
 
-    connection.query('SELECT * FROM users WHERE AccountName = ?',[accountname], function(error,results,fields){
+    connection.query('SELECT * FROM users WHERE AccountName = ?',[username], function(error,results,fields){
         if(error){
             res.json({
                 status:false,
