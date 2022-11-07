@@ -26,4 +26,4 @@ const ifLoggedIn = (req,res,next) => {
 router.get('/', ifNotLoggedIn, homePage);
 
 router.get("/login", ifLoggedIn, loginPage);
-router.post("/login",)
+router.post("/login", ifLoggedIn)
