@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require('body-parser');
 //Database connection from db.js file
-const connection = require('./db');
+const connection = require('./db.js');
 const app = express();
 
 const authenticateController=require('./controllers/authenticate-controller');
