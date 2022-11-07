@@ -1,4 +1,4 @@
-const {validationResult} = require("express-validator");
+/*const {validationResult} = require("express-validator");
 const bcrypt = require('bcryptjs');
 const connection = require("./../db");
 
@@ -91,4 +91,4 @@ exports.signup = async (req, res, next) => {
     catch(e){
         next(e);
     }
-};
+};*/

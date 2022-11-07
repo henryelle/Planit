@@ -1,30 +1,28 @@
 const express = require("express");
-const session = require('express-session');
-const path = require('path');
-const routes = require('./route');
+const bodyParser = require('body-parser');
+//Database connection from db.js file
+const connection = require('./db.js');
 const app = express();
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+const authenticateController=require('./controllers/authenticate-controller');
+const registerController=require('./controllers/register-controller');
 
-app.use(express.urlencoded({extended:false}));
-app.use(session({
-    name: 'planit',
-    secret: 'IT121622',
-    resave: false,
-    saveUninitialized: true,
-    cookie:{
-        maxAge: 3600 * 1000,
-    }
-}));
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
 
-app.use(express.static(path.join(__dirname, 'style')));
-app.use(routes);
+app.get('/', function (req,res){
+    res.sendFile(__dirname + "/" + "index.html");
+})
 
-app.use((err, req, res, next) => {
-    return res.send('Server Error')
-});
+app.get('/login.html', function(req,res){
+    res.sendFile(__dirname + "/" + "login.html");
+})
+//Handlers for login and registration
+app.post('/api/register', registerController.register);
+app.post('/api/authenticate', authenticateController.authenticate);
 
-app.listen(3000, () => console.log("Server runs on port 3000"));
-
+console.log(authenticateController);
+app.post('/controllers/register-controller', registerController.register);
+app.post('/controllers/authenticate-controller', authenticateController.authenticate);
 
