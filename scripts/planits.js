@@ -14,6 +14,7 @@ var months = [
 ];
 
 var recordedPlanits = {};
+var selectedPlanit = "";
 
 function createPlanit() {
     document.getElementById("select-planit").style.border = "none"
@@ -31,9 +32,11 @@ function createPlanit() {
     }
     let imgPath = "../images/planets/" + planet.toLowerCase() + ".svg";
     // $('#rSide').append('<div class="col"><img class="planit col" src = '+ imgPath +' /></div>');
-    $('#rSide').append('<a href="#" title="'+name+'"><img class="planit" src = '+ imgPath +' /></a>');
+    $('#rSide').append('<a href="#" title="'+name+'"><img onclick="selectPlanit(\''+name+'\')" class="planit" src = '+ imgPath +' /></a>');
 
+    recordedPlanits[name] = [];
     document.getElementById("nameInput").value = '';
+    console.log(recordedPlanits);
 }
 
 // TODO add call to php file that adds planit to database
@@ -238,17 +241,36 @@ function pageMonth(direction) {
 HANDLES CALENDAR
 */
 
+
+function selectPlanit(title) {
+  //let planits = document.getElementsByTagName("img");
+  let planitAnchors = document.getElementsByTagName("a");
+  let length = planitAnchors.length;
+  for(i = 0; i < length; i++) {
+    if(planitAnchors[i].getAttribute("title") === title) {
+     selectedPlanit = planitAnchors[i].getAttribute("title");      
+      break;
+    }
+  }
+}
+
+
 // https://stackoverflow.com/questions/55622502/change-li-background-color-when-clicked
 //TODO RECORD THE DAY IN PHP SEND TO DATABASE APPEND TO DATES LIST
 // added 10/25
 $(document).ready(function(){
-  $('.all-date ul li').click(function(e){
-  $(e.target).css('backgroundColor', '#AE7CFA');
-  $(e.target).css('color','white');
-  let day = $(e.target).text();
-  let month = months.indexOf($("#month-box").text());
-  // maybe call PHP here and send row insert
-   });
+    $('.all-date ul li').click(function(e){
+    $(e.target).css('backgroundColor', '#AE7CFA');
+    $(e.target).css('color','white');
+    let day = $(e.target).text();
+    let month = months.indexOf($("#month-box").text());
+    var planit = this.title;
+    if(planit in recordedPlanits) {
+      recordedPlanits[planit].push(e.innerHTML)
+      console.log("hi~")
+    }
+    // maybe call PHP here and send row insert
+    });
 });
 
 // HOOO BOY HERE WE GO
@@ -298,27 +320,53 @@ $('#rSide').on('click', 'a', function() {
 /*
 manage pop up
 */
+const planits = document.querySelectorAll('a');
 
-$('#rSide').on('click', 'a', function() {
-  //console.log(this.title);
-  var planit = this;
-  var closePopup = document.getElementById("popupclose");
-  var overlay = document.getElementById("overlay");
-  var popup = document.getElementById("popup");
-  // Close Popup Event
-  closePopup.onclick = function() {
-    overlay.style.display = 'none';
-    popup.style.display = 'none';
-  };
-  // Show Overlay and Popup
-  planit.onclick = function() {
-    overlay.style.display = 'block';
-    popup.style.display = 'block';
+
+planits.forEach(planit => {
+  planit.addEventListener('dblclick', (e) => {
+    var planit = this;
+    console.log(planit);
+    var closePopup = document.getElementById("popupclose");
+    var overlay = document.getElementById("overlay");
+    var popup = document.getElementById("popup");
+    // Close Popup Event
+    closePopup.onclick = function() {
+      overlay.style.display = 'none';
+      popup.style.display = 'none';
+    };
+    // Show Overlay and Popup
+    planit.onclick = function() {
+      overlay.style.display = 'block';
+      popup.style.display = 'block';
+      
+    }
+    var labelText = document.getElementById("labelText");
+    labelText.innerHTML = this.title + " notes."
+  });
+}); 
+
+
+// $('#rSide').on('click', 'a', function() {
+//   //console.log(this.title);
+//   var planit = this;
+//   var closePopup = document.getElementById("popupclose");
+//   var overlay = document.getElementById("overlay");
+//   var popup = document.getElementById("popup");
+//   // Close Popup Event
+//   closePopup.onclick = function() {
+//     overlay.style.display = 'none';
+//     popup.style.display = 'none';
+//   };
+//   // Show Overlay and Popup
+//   planit.onclick = function() {
+//     overlay.style.display = 'block';
+//     popup.style.display = 'block';
     
-  }
-  var labelText = document.getElementById("labelText");
-  labelText.innerHTML = this.title + " notes."
-    });
+//   }
+//   var labelText = document.getElementById("labelText");
+//   labelText.innerHTML = this.title + " notes."
+// });
 
 
 //var planit = $(document).getPlanitName();
