@@ -262,6 +262,8 @@ $(document).ready(function(){
     $('.all-date ul li').click(function(e){
     $(e.target).css('backgroundColor', '#AE7CFA');
     $(e.target).css('color','white');
+    recordedPlanits[selectedPlanit].push($(e.target).prop('outerText'));
+    console.log(recordedPlanits[selectedPlanit]);
     let day = $(e.target).text();
     let month = months.indexOf($("#month-box").text());
     var planit = this.title;
@@ -299,7 +301,10 @@ $('#rSide').on('click', 'a', function() {
     $("li").each(function(){
       if(recordedDays.includes(this.innerHTML)) {
         $(this).css("background-color", "rgb(174, 124, 250)")
-    }  
+      }
+      if($(this).css("opacity") == "0.8"){
+        $(this).css("background-color", "rgb(5, 1, 19)")
+      }
       //recordedPlanits[planit] = recordedDays
     })
   }
@@ -320,33 +325,6 @@ $('#rSide').on('click', 'a', function() {
 /*
 manage pop up
 */
-const planits = document.querySelectorAll('a');
-
-
-planits.forEach(planit => {
-  planit.addEventListener('dblclick', (e) => {
-    var planit = this;
-    console.log(planit);
-    var closePopup = document.getElementById("popupclose");
-    var overlay = document.getElementById("overlay");
-    var popup = document.getElementById("popup");
-    // Close Popup Event
-    closePopup.onclick = function() {
-      overlay.style.display = 'none';
-      popup.style.display = 'none';
-    };
-    // Show Overlay and Popup
-    planit.onclick = function() {
-      overlay.style.display = 'block';
-      popup.style.display = 'block';
-      
-    }
-    var labelText = document.getElementById("labelText");
-    labelText.innerHTML = this.title + " notes."
-  });
-}); 
-
-
 // $('#rSide').on('click', 'a', function() {
 //   //console.log(this.title);
 //   var planit = this;
