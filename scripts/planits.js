@@ -269,7 +269,6 @@ $(document).ready(function(){
     var planit = this.title;
     if(planit in recordedPlanits) {
       recordedPlanits[planit].push(e.innerHTML)
-      console.log("hi~")
     }
     // maybe call PHP here and send row insert
     });
@@ -325,26 +324,26 @@ $('#rSide').on('click', 'a', function() {
 /*
 manage pop up
 */
-// $('#rSide').on('click', 'a', function() {
-//   //console.log(this.title);
-//   var planit = this;
-//   var closePopup = document.getElementById("popupclose");
-//   var overlay = document.getElementById("overlay");
-//   var popup = document.getElementById("popup");
-//   // Close Popup Event
-//   closePopup.onclick = function() {
-//     overlay.style.display = 'none';
-//     popup.style.display = 'none';
-//   };
-//   // Show Overlay and Popup
-//   planit.onclick = function() {
-//     overlay.style.display = 'block';
-//     popup.style.display = 'block';
+$('#rSide').on('click', 'a', function() {
+  //console.log(this.title);
+  var planit = this;
+  var closePopup = document.getElementById("popupclose");
+  var overlay = document.getElementById("overlay");
+  var popup = document.getElementById("popup");
+  // Close Popup Event
+  closePopup.onclick = function() {
+    overlay.style.display = 'none';
+    popup.style.display = 'none';
+  };
+  // Show Overlay and Popup
+  planit.ondblclick = function() {
+    overlay.style.display = 'block';
+    popup.style.display = 'block';
     
-//   }
-//   var labelText = document.getElementById("labelText");
-//   labelText.innerHTML = this.title + " notes."
-// });
+  }
+  var labelText = document.getElementById("labelText");
+  labelText.innerHTML = this.title + " notes."
+});
 
 
 //var planit = $(document).getPlanitName();
