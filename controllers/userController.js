@@ -1,6 +1,6 @@
 const {validationResult} = require("express-validator");
 const bcrypt = require('bcryptjs');
-const connection = require(".././db");
+const connection = require(".././db.js");
 
 exports.homePage = async(req,res,next) => {
     const [row] = await connection.execute("SELECT * FROM users WHERE 'UserID' = ?", [req.session.userID]);
