@@ -7,7 +7,7 @@ const {
     loginPage,
     signup,
     signupPage,
-} = require("./controllers/userController");
+} = require("./controllers/userController.js");
 
 const ifNotLoggedIn = (req,res,next) => {
     if(req.session.userID){
