@@ -12,3 +12,39 @@ body:before {
     background-position: center;
     background-size: cover;
 }
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.logo {
+    height: 5em;
+    width: 7%;
+    margin-left: 0.9em;
+    margin-top: 0.7em;
+    background: url("../images/logo.svg") no-repeat;
+}
+
+#text {
+    width:35%;
+}
+
+.logo:hover {
+    background: url("../images/logoHover.svg") no-repeat;
+}
+
+.btn {
+    border: none;
+}
+
+.m-4 {
+    padding-bottom: 10px;
+    color: #d3e0ea;
+    background: url("../images/buttonWhite.svg") no-repeat;
+}
+  
+.m-4:hover {
+    color: #deecde;
+    background: url("../images/buttonGreen.svg") no-repeat;
+}
+
