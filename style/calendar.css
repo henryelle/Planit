@@ -246,3 +246,10 @@ ul li {
   margin-right: .5em;
 }
 
+#help {
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}

@@ -88,10 +88,8 @@ p {
 }
 
 .btn-group {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 10.25em;
-    align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 #select-planit {
@@ -110,6 +108,7 @@ p {
 
 .menu-group {
     padding-bottom: 1em; 
+    padding-top: 1em;
 }
 
 /* .planit-div {
@@ -153,9 +152,6 @@ p {
 .flex-child:first-child {
     margin-right: 20px;
 }
-
-
-
 
 .container {
     margin: 0 auto;
@@ -352,3 +348,11 @@ popup
 /*
 popup
 */
+
+#help {
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  margin-right: 4em;
+  margin-bottom: 1em;
+}
