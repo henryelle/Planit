@@ -153,21 +153,37 @@ body:before {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-}
-
-.column:first-of-type {
-    background: url("/../images/homeBox.svg") center center;
-    background-repeat: no-repeat;
+    width: 100%;
 }
 
 .description {
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 10px;
     justify-content: center;
-    /*background: url("/../images/homeBox.svg") center center;
+    background: url("/../images/homeBox.svg") center center;
     background-repeat: no-repeat;
-    background-size: fill;*/
+    background-size: contain;
 }
+
+.learnButton {
+    text-align: center;
+    margin: 10px auto;
+    margin-top: 4px;
+    padding: 4px 6px;
+    border: 1px outset;
+    border-color: #A7CBE8;
+    font-size: 14px;
+    font-family: 'Noto Sans Mono', monospace;
+    color: #e0f1ff;
+}
+
+.learnButton:hover {
+    border: 1px inset;
+    border-color: #81F57C;
+    color: #81F57C;
+}
+
 
 .homeArt {
     width: 100%;
