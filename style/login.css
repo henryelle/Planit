@@ -170,18 +170,17 @@ input[type=email], input[type=password] {
 }
 
 input[type=submit] {
-    margin: 2px 0;
-    padding-top: 10px;
-    padding-bottom: 14px;
-    border: 1px;
+    margin: 10px auto;
+    padding: 4px 6px;
+    border: 1px outset;
     border-color: #A7CBE8;
-    font-size: 17px;
+    font-size: 14px;
     font-family: 'Noto Sans Mono', monospace;
     color: #e0f1ff;
 }
 
 input[type=submit]:hover {
-    border: 1px;
+    border: 1px inset;
     border-color: #81F57C;
     color: #81F57C;
 }
