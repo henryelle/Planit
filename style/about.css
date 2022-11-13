@@ -25,10 +25,6 @@ body:before {
     background: url("../images/logo.svg") no-repeat;
 }
 
-#text {
-    width:35%;
-}
-
 .logo:hover {
     background: url("../images/logoHover.svg") no-repeat;
 }
@@ -48,11 +44,24 @@ body:before {
     background: url("../images/buttonGreen.svg") no-repeat;
 }
 
+.title {
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.info {
+    font-family: 'Noto Sans Mono', monospace;
+}
+
 .portraits {
     position: relative;
-    margin: 10% 5%;
+    margin: 2% 5%;
     padding-top: 10%;
     padding-bottom: 10%;
+    font-family: 'Noto Sans Mono', monospace;
 }
 
 .row {
@@ -71,4 +80,15 @@ body:before {
     margin-left: 2%;
     margin-right: 2%;
     text-align: center;
+}
+
+.ack > h2, .ack > h3 {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+.ack > h3 {
+    padding-bottom: 50px;
 }
