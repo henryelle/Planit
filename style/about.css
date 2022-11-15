@@ -57,28 +57,31 @@ body:before {
     margin-top: 2%;
     margin-bottom: 3%;
     width: 80%;
+    font-size: 17px;
     font-family: 'Noto Sans Mono', monospace;
-}
-
-hr {
-    margin: auto;
-    width: 90%;
-    border-color: #A7CBE8;
 }
 
 .portraits {
     position: relative;
-    margin: 3% 8%;
+    border: 1px solid #A7CBE8;
+    margin: 5% 8%;
     font-family: 'Noto Sans Mono', monospace;
+}
+
+.title {
+    margin-top: 2%;
 }
 
 .row {
     margin-top: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    font-size: 16px;
   }
 
 .column {
@@ -101,4 +104,28 @@ hr {
 
 .ack > h3 {
     padding-bottom: 50px;
+}
+
+/*SCREEN SIZE CHANGE EXCEPT I SUCK*/
+@media screen and (max-width: 750px) {
+    .title {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+
+    .row {
+        font-size: 14px;
+    }
+
+    .ack > h2, .ack > h3 {
+        font-size: 0.9em;
+    }
+    
+    .ack > h3 {
+        padding-bottom: 30px;
+    }
 }
