@@ -33,99 +33,11 @@ body:before {
     background: url("../images/logoHover.svg") no-repeat;
 }
 
-/*
 .container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
-    width: 50%;
     position: relative;
-    margin: 0 auto;
-    margin-bottom: 8%;
-    background: url("/../images/loginBackground.svg") center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    object-fit: fill;
-}
-
-.form-title {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    text-align: center;
     margin: auto;
-    font-size: 30px;
-    font-family: 'Noto Sans Mono', monospace;
-    font-weight: bold;
-    padding-top: 40px;
-    color:#a7cbe8;
-}
-
-.login-form {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-.form-control {
-    margin: 0 auto;
-    padding-bottom: 10px;
-}
-
-.label-text {
-    font-size: 15px;
-    font-family: 'Noto Sans Mono', monospace;
-    color:#a7cbe8;
-}
-
-input[type=email], input[type=password] {
-    border: 1px solid;
-    border-radius: 4px;
-    padding-left: 8px;
-    padding-right: 6px;
-    font-size: 14px;
-}
-
-.form-submit {
-    text-align: center;
-    margin: 2px 0;
-    padding-top: 10px;
-    padding-bottom: 14px;
-    border: 1px;
-    border-color: #A7CBE8;
-    font-size: 17px;
-    font-family: 'Noto Sans Mono', monospace;
-    color: #A7CBE8;
-}
-
-.form-submit:hover {
-    border: 1px;
-    border-color: #81F57C;
-    color: #81F57C;
-}
-
-.form-info {
-    text-align: center;
-    margin-top: 2%;
-    font-size: 14px;
-    font-family: 'Noto Sans Mono', monospace;
-    color:#a7cbe8;
-}
-
-.signuplink {
-    font-style: italic;
-}
-
-.signuplink:hover {
-    color: #81F57C;
-}
-*/
-
-.container {
-    position: relative;
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 8%;
-    padding-top: 2%;
-    padding-bottom: 6%;
+    margin-bottom: 10%;
+    padding: 2% 10% 5% 10%;
     background: url("/../images/loginBackground.svg") center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -133,11 +45,11 @@ input[type=email], input[type=password] {
 
 .form-title {
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
     font-size: 30px;
     font-family: 'Noto Sans Mono', monospace;
     font-weight: bold;
-    padding-top: 40px;
+    padding-top: 30px;
     color: #e0f1ff;
 }
 
@@ -187,7 +99,8 @@ input[type=submit]:hover {
 
 .form-info {
     text-align: center;
-    margin-top: 2%;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
     font-size: 14px;
     font-family: 'Noto Sans Mono', monospace;
     color:#e0f1ff;
