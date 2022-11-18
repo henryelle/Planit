@@ -127,6 +127,7 @@ body:before {
     flex-basis: 100%;
     flex: 1;
     width: 100%;
+    min-width: 0;
     margin-right: 2%;
     background: url("/../images/homeBox.svg") center center;
     background-repeat: no-repeat;
@@ -137,12 +138,13 @@ body:before {
 }
 
 .description {
-    padding: 10% 10% 3% 12%;
+    padding: 8% 10% 3% 12%;
 }
 
 .learnButton {
     text-align: center;
     margin: 10px auto;
+    margin-left: 38%;
     padding: 4px 6px;
     border: 1px outset;
     border-color: #A7CBE8;
@@ -165,7 +167,7 @@ body:before {
     height: 70%;
     margin: auto;
     margin-left: 2%;
-    background: url("/../images/solarsystem.svg") center center;
+    background: url("../images/solarsystem.svg") center center;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -194,7 +196,7 @@ body:before {
 
 
 
-/* SCREEN SIZE CHANGE EXCEPT I SUCK
+/* SCREEN SIZE CHANGE EXCEPT I SUCK*/
 @media screen and (max-width: 750px) {
     .welcometo {
         font-size: 1.5em;
@@ -210,26 +212,35 @@ body:before {
 
     .row {
         flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     .column1 {
         flex-direction: column;
-        width: 100%;
         font-size: 1.5vw;
+        height: auto;
+        background-size: contain;
     }
-    
+
+    .description {
+        margin: 6% 6% 6% 6%;
+        padding: 10% 20% 5% 20%;
+    }
+
     .learnButton {
         font-size: 1.5vw;
     }
 
     .column2 {
         flex-direction: row;
+        margin: auto;
+        width: 80%;
     }
 
     .homeArt {
-        width: 100%;
-        height: 400px;
-        margin: 0 auto;
+        height: 300px;
     }
 
     .ack > h2, .ack > h3 {
@@ -239,4 +250,4 @@ body:before {
     .ack > h3 {
         padding-bottom: 30px;
     }
-}*/
+}
