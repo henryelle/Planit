@@ -198,16 +198,21 @@ body:before {
 
 /* SCREEN SIZE CHANGE EXCEPT I SUCK*/
 @media screen and (max-width: 750px) {
+    .container1 {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
     .welcometo {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     
     .planitu {
-        font-size: 3.5em;
+        font-size: 3.2em;
     }
     
     .slogan {
-        font-size: 0.8em;
+        font-size: 0.5em;
     }
 
     .row {
@@ -219,18 +224,18 @@ body:before {
 
     .column1 {
         flex-direction: column;
-        font-size: 1.5vw;
+        font-size: 2vw;
         height: auto;
         background-size: contain;
     }
 
     .description {
-        margin: 6% 6% 6% 6%;
-        padding: 10% 20% 5% 20%;
+        margin: 5% 5% 5% 5%;
+        padding: 10% 18% 5% 18%;
     }
 
     .learnButton {
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
 
     .column2 {
