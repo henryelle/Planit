@@ -113,3 +113,61 @@ input[type=submit]:hover {
 .signuplink:hover {
     color: #81F57C;
 }
+
+
+
+
+
+
+
+
+
+
+/* SCREEN SIZE CHANGE EXCEPT I SUCK*/
+@media screen and (max-width: 750px) {
+    .container {
+        margin: auto;
+        margin-bottom: 10%;
+        padding: 2% 10% 5% 10%;
+    }
+    
+    .form-title {
+        font-size: 22px;
+        padding-top: 30px;
+    }
+    
+    .login-form {
+        width: 70%;
+    }
+    
+    .form-control {
+        margin: 0 auto;
+        padding-bottom: 8px;
+    }
+    
+    .label-text {
+        font-size: 12px;
+    }
+    
+    input[type=email], input[type=password] {
+        height: 10px;
+        border: 1px solid;
+        padding-left: 8px;
+        padding-right: 6px;
+        font-size: 11px;
+    }
+    
+    input[type=submit] {
+        margin: 10px auto;
+        padding: 4px 6px;
+        border: 1px outset;
+        font-size: 12px;
+    }
+    
+    .form-info {
+        text-align: center;
+        margin-top: 1.5%;
+        margin-bottom: 1%;
+        font-size: 12px;
+    }
+}
