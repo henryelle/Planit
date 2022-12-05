@@ -130,3 +130,25 @@ body:before {
 .ack > h3 {
     padding-bottom: 40px;
 }
+
+
+/* SCREEN SIZE CHANGE EXCEPT I SUCK*/
+@media screen and (max-width: 750px) {
+    .welcome {
+        font-size: 1.5em;
+    }
+    
+    .name {
+        font-size: 3.5em;
+    }
+    
+    .small {
+        font-size: 0.8em;
+    }
+
+    .planet {
+        width: 50%;
+        max-width: 40%;
+        margin-left: 10em;
+    }
+}
